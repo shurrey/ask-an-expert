@@ -1,0 +1,94 @@
+body {
+    /* Body/Default */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+
+
+    /* Grayscale/Onyx (#262626) */
+
+    color: #262626;
+}
+
+.formwrapper {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    /* Grayscale/Feather (#F8F8F8) */
+
+    background: #F8F8F8;
+    /* Grayscale/Pebble (#CDCDCD) */
+
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 2px 2px 0px 0px;
+    padding: 10px;
+}
+
+.textarea {
+    /* Background */
+    left: 0px;
+    right: 0px;
+    top: 39px;
+    bottom: 33px;
+    width: 100%;
+
+    /* Grayscale / White (#FFFFFF) */
+
+    background: #FFFFFF;
+    /* Grayscale/Pebble (#CDCDCD) */
+
+    border: 1px solid #b848a1;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.textbox {
+    width: 100%;
+    height: 38px;
+
+    /* Grayscale / White (#FFFFFF) */
+
+    background: #FFFFFF;
+    /* Focus/Light Bk (#006DC7) */
+
+    border: 1px solid #b848a1;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.dropdown {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 100%;
+
+    /* Grayscale / White (#FFFFFF) */
+
+    background: #FFFFFF;
+    /* Grayscale/Pebble (#CDCDCD) */
+
+    border: 1px solid #b848a1;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.button {
+    position: relative;
+    width: 60px;
+    height: 37px;
+    left: 260px;
+
+    /* Signature/Dark purple (#A234B5) */
+
+    background: #b848a1;
+    border-radius: 1px;
+    color:white;
+}

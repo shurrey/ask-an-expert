@@ -1,0 +1,17 @@
+cachetools==4.0.0
+Flask==1.1.1
+Flask-Ext==0.1
+Flask-Jsonpify==1.5.0
+Flask-RESTful==0.3.7
+PyJWT==1.7.1
+requests==2.22.0
+slackclient==2.5.0
+urllib3==1.25.3
+flask-caching==1.8.0
+#pylti1p3==1.4.0
+git+git://github.com/shurrey/pylti1.3.git
+Werkzeug==1.0.0
+flask-wtf==0.14.3
+Flask-KVSession==0.6.2
+flask-sslify==0.1.5
+ptvsd==4.3.2

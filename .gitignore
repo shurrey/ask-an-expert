@@ -1,0 +1,6 @@
+Config.py
+__pycache__
+configs/lti.json
+configs/private.key
+configs/public.jwk.json
+configs/public.key

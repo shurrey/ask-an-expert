@@ -1,0 +1,61 @@
+{% block content %}
+ <link rel="stylesheet" href="/static/style.css">
+    <p>
+      Welcome to the Virtual Knowledge Bar. We are happy to answer any questions you might have!
+    </p>
+    <p>
+      Filling out this form will create a Collaborate session and launch you into it. A notice will be sent to knowledge bar staff, who will join your sessions as soon as they can. At peak times, this may take a few minutes. Please be patient.
+    </p>
+    <p>
+      If you just want to post your question to the discussion forums, all you have to do is click the X on this panel and ask away!
+    </p>
+    
+    <div class="formwrapper">
+      <form method="POST" action="/question/">
+        {% if user_info['gname'] == 'Unknown' %}
+          <div>
+            {{ form.gname.label }}<br />
+            {{ form.gname(class="textbox", size=50) }}
+          </div><br />
+        {% endif %}
+
+        {% if user_info['fname'] == 'Unknown' %}
+          <div>
+            {{ form.fname.label }}<br />
+            {{ form.fname(class="textbox", size=50) }}
+          </div><br />
+        {% endif %}
+
+
+        {% if user_info['email'] == 'Unknown' %}
+          <div>
+            {{ form.email.label }}<br />
+            {{ form.email(class="textbox") }}
+          </div><br />
+        {% endif %}
+
+
+        {% if user_info['institution'] == 'Unknown' %}
+          <div>
+            {{ form.institution.label }}<br />
+            {{ form.institution(class="textbox", size=55) }}
+          </div><br />
+        {% endif %}
+        
+        {% if user_info['product'] == 'Unknown' %}
+        <div>
+          {{ form.product.label }}<br />
+          {{ form.product(class="dropdown") }}
+        </div><br />
+        {% endif %}
+
+        <div>
+          {{ form.question.label }}<br />
+          {{ form.question(class="textarea", rows='25',cols='45')}}
+        </div><br />
+        
+
+        {{ form.submit(class="button") }}
+    </form>
+  </div>
+{% endblock %}
